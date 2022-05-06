@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background: black;
+}
+.container img{
+    width: 30%;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 310px;
+    padding: 10px;
+    box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+}
+.drum {
+    outline: none;
+    color: #fff;
+    width: 50%;
+    height: 100px;
+    font-size: 1.2em;
+
+}
+
+.container span {
+    margin: 10px; 
+    font-family: 'Russo One', sans-serif;
+
+}
+
+
+.q {
+    background: red;
+    animation: coolAnimation .5s;
+}
+
+.w {
+    background: red;
+    animation: coolAnimation .5s;
+    animation-delay: .2s;
+}
+
+.e {
+    background: red;
+    animation: coolAnimation .5s;
+    animation-delay: .3s;
+}
+
+.r {
+    background: red;
+    animation: coolAnimation .5s;
+    animation-delay: .4s;
+}
+
+.t {
+    background: red;
+    animation: coolAnimation2 .5s;
+    animation-delay: .5s;
+}
+
+.y {
+    background: red;
+    animation: coolAnimation2 .5s;
+    animation-delay: .6s;
+}
+
+.u {
+    background: red;
+    animation: coolAnimation2 .5s;
+    animation-delay: .7s;
+}
+
+.i {
+    background: red;
+    animation: coolAnimation2 .5s;
+    animation-delay: .8s;
+}
+
+
+
+/* 🤗 esquinas */
+
+.drum:nth-child(1) {
+    border-radius: 5px 0px 0px 0px;
+}
+
+.drum:nth-child(4) {
+    border-radius: 0px 5px 0px 0px;
+}
+
+.drum:nth-child(13) {
+    border-radius: 0px 0px 0px 5px;
+}
+
+.drum:nth-child(16) {
+    border-radius: 0px 0px 5px 0px;
+}
+
+/* esquinas */
+
+
+.pressed {
+    opacity: 0.5;
+    background: black ;
+}
+
+.pressed:nth-child(5) {
+    background: black ;
+}
+
+.pressed:nth-child(6) {
+    background: black ;
+}
+
+.pressed:nth-child(7) {
+    background: black ;
+}
+
+.pressed:nth-child(8) {
+    background: black ;
+}
+
+
+.drum:nth-child(1) {
+    background: radial-gradient(circle, red, red);
+}
+
+.drum:nth-child(2) {
+    background: radial-gradient(circle, red, red);
+}
+
+.drum:nth-child(3) {
+    background: radial-gradient(circle, red, red);
+}
+
+.drum:nth-child(4) {
+    background: radial-gradient(circle, red, red);
+}
+
+.drum:nth-child(5) {
+    background: radial-gradient(circle, red, red);
+}
+
+.drum:nth-child(6) {
+    background: radial-gradient(circle, red, red);
+}
+
+.drum:nth-child(7) {
+    background: radial-gradient(circle, red, red);
+}
+
+.drum:nth-child(8) {
+    background: radial-gradient(circle, red, red);
+}
+
+
+
+@keyframes coolAnimation {
+    0% {
+        opacity: 0.5;
+        background: red;
+    }
+}
+
+@keyframes coolAnimation2 {
+    0% {
+        opacity: 0.5;
+        background: red;
+    }
+}
